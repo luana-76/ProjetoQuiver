@@ -1,0 +1,937 @@
+@charset-'utf-8';
+
+/**
+	
+	* Estilizando o scroll do body
+	* Estilização do menu 
+		- Estilização do logo
+		- Estilizando a lista de links
+	* Estilização da introdução
+		- Estilização dos botões
+		- Caixas de links
+	* Parte dos aliados
+	- Parte das imagens do scroll
+		*Parte dos botões
+	- Parte dos serviços
+		* Caixas pequenas
+	- Parte do relógio
+	- Ranking
+	 * parte das caixas pequenas referêntes a essa parte do site 
+
+**/
+
+#contactStyle{
+	
+	width: 50vw;
+	height: 50vh;
+	background: #e8e8e8;
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	justify-content: start;
+
+}
+
+#contactStyle form{
+	
+	height: 70%;
+	margin-top: 10px;
+	padding: 0 15px;
+	border-left: 5px solid #f1184a;
+	border-right: 5px solid #f1184a;
+
+}
+
+#contactStyle input{
+	
+	display: inline-block;
+	margin-bottom: 10px;
+	outline: none;
+	width: 300px;
+	height: 25px;
+	margin-top: 10px;
+	border: none;
+	padding-left: 5px;
+}
+
+#contactStyle input[type='submit']{
+	
+	width: 120px;
+	background: #f1184a;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+
+}
+textarea{
+	
+	width: 580px;
+	height: 25vh;
+	outline: none;
+	padding: 5px 0 0 5px;
+	border: none;
+
+}
+
+#close{
+	
+	width: 20px;
+	height: 20px;
+	background: #f1184a00;
+	border: none;
+	outline: none;
+
+
+}
+
+#close img{
+	
+	cursor: pointer;
+
+}
+
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+}
+
+.displayRow{
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.displayColumn{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/* Estilizando o scroll do body */
+
+body{
+	
+	overflow-x: hidden;
+
+}
+body::-webkit-scrollbar {/* Barra fixa*/
+
+  background: linear-gradient(#f1184a, #fff);
+  width: 5px;
+
+}
+
+
+body::-webkit-scrollbar-thumb {/* Barra que rola */
+
+  background-color: #fff; 
+
+}
+
+/* Terminando estilizando o scroll do body */
+
+header{
+
+	background: #f1184a;
+	height: 100vh;
+
+}
+
+/* Estilização do menu */
+
+.firstMenu{
+
+	/*display: flex;*/
+	align-items: baseline;
+	/*flex-direction: rown;*/
+	flex-wrap: no-wrap;
+	justify-content: space-around;
+
+}
+
+/* Estilização do logo */
+
+nav#logo strong{
+
+	font: 1.3em 'Cambay', sans-serif;
+
+}
+
+nav#logo strong a{
+
+	color: #fff;
+	text-decoration: none;
+
+}
+
+nav#logo strong #maxLetter{
+
+	font: 1.7em 'Amaranth', sans-serif;
+
+}/* Fim da estilização do logo */
+
+
+/* Estilizando a lista de links */
+
+#firstList,
+li{
+
+ 	display: inline-block;
+ 	list-style-type: none;
+
+ }
+
+#firstList li a{
+
+	color: #eae1e1;
+	font-size: clamp(.7em, 1em, 1em);
+	text-decoration: none;
+
+}
+
+
+#firstList li a:hover{
+
+	color: #fff;
+	font-weight: 700;
+
+}
+
+#firstList li img,
+#search{/* Alinhando os conteudos da lista ao centro */
+
+	vertical-align: middle;
+
+}
+
+#firstList #but{
+
+	cursor: pointer;
+	border: none;
+	background-color: #fff;
+	border-radius: 3px;
+	color: #f1184a;
+	font-weight: 700;
+	padding: 10px;
+
+}
+
+#firstList #search{
+
+	border: 1.5px solid #eae1e1;
+	border-radius: 7px;
+	height: 40px;
+
+}
+
+#firstList #search input{
+
+	background-color: #f1184a00;
+	border: none;
+	color: #fff;
+	outline: none;
+	width: 0;
+
+}
+
+#firstList #search::before{/* Imagem da lupa do botão */
+
+	content: url(imagens/lupa.png);
+	padding: 0px 12px;
+	line-height: 52px;
+
+}
+
+#firstList #search:hover input,
+#firstList #search input:focus{
+
+	width: 150px;
+
+}/* Fim da estilização da lista de links*/
+
+/* Estilização da introdução */
+
+div#introdution{
+
+	color: #fff;
+	flex-wrap: wrap;
+	height: 75vh;
+
+}
+
+
+div#introdution .text h1{
+
+	font-style: italic;
+
+}
+
+
+div#introdution .text p{
+
+	padding-bottom: 20px;
+
+}
+
+
+div#introdution .text a{/* Estilização dos botões */
+
+	border-radius: 3px;
+	font-weight: 600;
+	padding: 10px;
+	text-decoration: none;
+
+}
+
+div#introdution .text a#butOne{
+
+	color: #f1184a;
+	background-color: #fff;
+	
+}
+
+div#introdution .text a#butTwo{
+
+	color: #fff;
+	background-color: #f1184a00;
+	border: 1px solid #fff;
+
+}/* Fim da estilização dos botões */
+
+div#introdution #img{/* Tamanho da caixa da imagem */
+
+	width: 40%;
+
+}
+
+#img img{
+
+	width: 100%;
+
+}
+
+/* Caixas de links */
+
+div#boxes > a{
+
+	background-color: #d01e48;
+	color: #fff;
+	font-size: .8em;
+	display: inline-block;
+	text-decoration: none;
+	height: 10vh;
+	width: 13vw;
+	padding: 8px;
+
+}
+
+div#boxes > a:hover{
+
+		background-color: #bf1a41;
+
+}
+
+/* Fim da estilização da introdução */
+
+main h2{
+	
+	color: #000;
+	text-align: center;
+	padding: 20px;
+	font-size: 1.3em;
+	padding-top: 60px;
+
+}
+
+main .font{
+	
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+main .font h2{
+	
+	font-size: 1.7em;
+	font-weight: 100;
+
+}
+
+/* Parte dos aliados */
+
+main #allies{
+
+	color: #808080;
+	background-color: #eef2f5;
+
+}
+
+main #allies ul{
+	
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+
+main #allies ul li{
+	
+	font-size: 1.3em;
+	display: inline;
+	padding-bottom: 23px; /* Quando ficar responsivo */
+	margin: 0 15px;
+	
+}
+
+
+#allies #goD,
+#google, 
+#am{
+	
+	font-weight: bold;
+
+}
+
+main #allies ul li#micro::before{/* imagem da microsoft */
+
+		content: url(https://img.icons8.com/ios-filled/30/808080/microsoft.png);
+		vertical-align: middle;
+		padding: 3px;
+
+}
+
+main #allies ul li#hp{/* imagem hp */
+
+		vertical-align: middle;
+		padding: 3px;
+
+}/* Fim da parte dos aliados */
+
+/*  Recent work */
+main .boxTxt{
+
+	width: 50%;
+	text-align: center;
+	margin: 0px auto 25px auto;
+
+}
+
+/* parte dos botões */
+
+main #section{
+	
+	flex-wrap: no-wrap;
+
+}
+
+#section button#all{/* Estilização padrão */
+	
+	background-color: #f1184a;
+    color: #fff;
+
+}
+
+main #section button{
+	
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #8080808c;
+	outline: none;
+	width: 130px;
+	line-height: 30px;
+	text-align: center;
+	color: #f1184a;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+main #section button:hover{
+	
+	background-color: #f1184a;
+	color: #fff;
+
+}/* Fim da parte dos botões */
+
+/* Parte das imagens do scroll*/
+
+#images{
+	
+	width: 100%;
+	margin-top: 30px;
+
+}
+ul#scroll::-webkit-scrollbar{
+	
+	width: 0;
+
+}
+
+ul#scroll{
+	
+	box-shadow: inset 50px 0px 0px 0px #ffffffbd, inset -50px 0px 0px 0px #ffffffbd;
+
+}
+
+ul#scroll li {
+	
+	position: relative;
+	z-index: -1000;
+
+}
+
+
+main #images ul#scroll{
+	
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+
+}
+
+main #images #scroll li{
+	
+	display: inline-block;
+	/*scroll-snap-align: start;*/
+
+}
+
+main #images #scroll img{
+	
+	width: 200px;
+	margin-left: 10px;
+	object-fit: cover;
+	
+}
+
+img[src='imagens/estatua.jpg']{/* Imagem da estatua */
+	
+	width: 170px !important;
+
+}
+
+/* Botões de passar as imagens */
+
+#buts{
+
+	margin: 20px 0;
+
+}
+
+#buts button{
+	
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	margin: 0 5px;
+
+
+}
+
+.stylebut{
+
+	  width: 10px;
+	  height: 10px;
+	  background: #c7c6c2;
+	  border-radius: 20px;
+	  display: inline-block;
+
+}
+
+/* Talvez pode tirar */
+
+.stylebut:hover{
+	
+	background-color: #f1184a;
+
+}
+
+#buts button img{
+	
+	  background: #fff;
+
+}/* Fim da parte de estilização do scroll */
+
+/* Parte dos serviços */
+
+main .txtPartTwo{
+	
+	background-color: #eef2f5;
+	padding-bottom: 50px;
+	flex-wrap: wrap;
+
+}
+
+main .txtPartTwo p{
+	
+	margin-bottom: 60px;
+
+}
+
+/* caixas pequenas */
+
+#pin{
+	
+	width: 78vw;
+
+}
+
+.boxc{
+	
+	background-color: #fff;
+	width: 320px;
+	height: 220px;
+	padding: 20px;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+
+}
+
+.boxc .int{
+
+	width: 300px;
+	margin: 0 auto;
+
+}
+
+.txtPartTwo .boxc .int p{
+
+	/*width: 300px;*/
+	margin: 5px 0 10px 0;
+
+}
+
+.txtPartTwo .boxc .int img{
+	
+	margin-bottom: 15px;
+	width: 13%;
+
+}
+
+
+.txtPartTwo .boxc .int a{
+	
+	color: #f1184a;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.txtPartTwo .boxc .int a::after{
+
+	content: url(https://img.icons8.com/material-rounded/20/f1184a/circled-chevron-right.png);
+	vertical-align: middle;
+	margin-left: 6px;
+
+}/* Fim da parte dos serviços */
+
+
+/* Parte do relógio */
+
+main #clock{
+	
+	font-weight: lighter;
+	flex-wrap: no-wrap;
+	justify-content: space-evenly;
+	background: linear-gradient(to right, #f1184a 50%, #fff 50%);
+
+}
+
+main #clock #imgR img{
+	
+	width: 38vw;
+
+}
+
+main #clock p{
+	
+	width: 215px;
+
+}
+
+main #clock #texROne{/* Concertar tamnaho da fonte */
+	
+	color: #fff;
+	font-size: 1.8em;
+	font-weight: 100;
+
+}
+
+main #clock #texROne strong{
+	
+	margin-top: 10px;
+	font-size: .5em;
+
+}
+
+main #clock #texRTwo p{
+	
+	color: #000;
+	margin-bottom: 25px;
+	text-align: justify;
+	margin-top: 70px;
+
+}
+
+main #clock #texRTwo a{
+	
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: .9em;
+	padding: 7px;
+	border-radius: 4px;
+	background-color: #f1184a;
+
+}/* Parte do relógio */
+
+/* Ranking */
+
+main #aweson{
+	
+	background-color: #eef2f5;
+
+}
+
+main #awesonText{
+
+	width: 50%;
+	text-align: center;
+	margin: 0px auto;
+	padding-top: 30px;
+
+}
+
+main #awesonText h2{
+	
+	font-size: 1.8em;
+	font-weight: 200;
+
+}
+
+/* parte das caixas pequenas referêntes a essa parte do site */
+
+main #meio{
+	
+	margin-top: 70px;
+	flex-wrap: no-wrap;
+	padding-bottom: 40px;
+}
+
+main .tamBoxP{
+	
+	background-color: #fff;
+	display: inline-block;
+	width: 170px;
+	height: 170px;
+	margin-left: 20px;
+
+}
+
+main .tamBoxP > img, .tamBoxP > strong{
+	
+	display: block;
+	text-align: center;
+
+}
+
+.tamBoxP > strong.number{
+	
+	font-size: 1.6em;
+
+}
+
+.tamBoxP > strong.text{
+	
+	font-size: .9em;
+	font-weight: 200;
+	margin-top: 5px;
+
+}
+
+main .tamBoxP > img{
+	
+	margin: 0 auto;
+	padding: 30px 0 10px;
+
+} /* Fim da Estilização da parte do Ranking */
+
+main .donos{
+	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0,0.7)), url(imagens/sala.jpg);
+	background-position: center;
+	color: #fff;
+
+}
+
+main .donos h2{
+	
+	color: #fff;
+	font-weight: 200;
+}
+
+/* Caixas pequenas referêntes a essa parte */
+
+main .donos .boxs{
+	
+	height: 40vh;
+	width: 19vw;
+	background-color: #fff;
+	font-weight: lighter;
+	padding: 20px 11px;
+	display: inline-block;
+	margin: 0 20px 20px 0;
+	/*display: flex;
+	flex-direction: row;
+	display: wrap;
+	align-items: center;
+	justify-content: center;*/
+
+}
+
+main .donos .one{
+	
+	background-image: url(imagens/manTwo.jpg);
+	background-position: center;
+	background-size: contain;
+	/*background-repeat: no-repeat;*/
+}
+
+main .donos .two{
+	
+	background-image: url(imagens/womanOne.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+main .donos .tree{
+	
+	background-image: url(imagens/manTree.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+main .donos .fwo{
+	
+	background-image: url(imagens/womanTwo.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+main .donos .five{
+	
+	background-image: url(imagens/manOne.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+main .donos .six{
+	
+	background-image: url(imagens/womanTree.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+/* Parte do js */
+
+main .donos .donosTwo{
+	
+	 width: 70%;
+	 margin: 0 auto;
+	 padding: 40px 0;
+
+}
+
+main .donos .caxinha{
+	
+	visibility: collapse;
+	display: flex;
+	flex-direction: column;
+	display: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 17vw;
+	height: 92%;
+
+}
+
+main .donos .caxinha strong{
+	display: block;
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 5px;
+}
+
+main .donos .caxinha strong.textSmall{
+	
+	font-size: .8em;
+	margin-bottom: 0;
+
+}
+
+main .donos .caxinha .redesSociais{
+	
+	margin-top: 20px;
+
+}
+
+main .donos .caxinha .redesSociais img{
+	
+	margin-left: 12px;
+
+}
+
+main .donos .boxs:hover .caxinha{
+	
+	visibility: visible;
+	background-color: #f1184aa8;
+	font-weight: lighter;
+
+}
+
+/* footer */
+
+footer #contact{
+
+	width: 600px;
+	height: 480px;
+	display: inline-block;
+
+}
+
+footer #contact p{
+	
+	color: gray;
+
+}
+
+
+footer #contact a{
+	
+	display: block;
+	padding-left: 43px;
+
+}
+
+footer #contact #email::before{
+	
+	content: url(https://img.icons8.com/ios-filled/40/f1184a/mail.png);
+	vertical-align: middle;
+	margin: 20px;
+}
+
+footer #contact #tel::before{
+	
+	content: url(https://img.icons8.com/ios/50/f1184a/phone.png);
+
+}
